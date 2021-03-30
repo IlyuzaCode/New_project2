@@ -19,7 +19,6 @@ header {
 }
 
 .logo {
-	// font: normal bold 24px/32px 'PT Serif', serif;
 	color: #000000;
 	width: 190px;
 	height: 35px;
@@ -28,43 +27,97 @@ header {
 
 .menu {
 	font: normal 500 18px/21px 'Roboto', sans-serif;
-	font-family: 'Roboto', sans-serif;
-	color: #000000;
 }
 
 .menu__item1 {
-	padding-right: 25px;
+	position: relative;
+	margin-right: 25px;
+	color: #000;
+	text-decoration: none;
+	transition: opacity .5s;
 }
 
 .menu__item2 {
-	padding-right: 24px;
+	position: relative;
+	margin-right: 24px;
+	color: #000;
+	text-decoration: none;
+	transition: opacity .5s;
 }
 
-.menu__item3 {
-	padding-right: 27px;
+.menu__item3, .menu__item4 {
+	position: relative;
+	margin-right: 27px;
+	color: #000;
+	text-decoration: none;
+	transition: opacity .5s;
 }
 
-.menu__item4 {
-	padding-right: 27px;
+.menu__item5 {
+	position: relative;
+	color: #000;
+	text-decoration: none;
+	transition: opacity .5s;
+}
+
+.menu__item_active:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 3px;
+	left: 0;
+	background: #0056EC;
+}
+
+.menu__item1:hover, .menu__item2:hover, .menu__item3:hover, .menu__item4:hover, .menu__item5:hover {
+	font-weight: bold;
+	opacity: .5;
+}
+
+.menu__item1:hover:after, .menu__item2:hover:after, .menu__item3:hover:after, .menu__item4:hover:after, .menu__item5:hover:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 3px;
+	left: 0;
+	background: #0056EC;
+}
+
+.menu__item1:after, .menu__item2:after, .menu__item3:after, .menu__item4:after, .menu__item5:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 0;
+	height: 3px;
+	left: 0;
+	background: #0056EC;
+	opacity: 0;
+	transition: opacity .5s, width .5s;
+}
+
+.menu__item1:hover:after, .menu__item2:hover:after, .menu__item3:hover:after, .menu__item4:hover:after, .menu__item5:hover:after, .menu__item_active:after {
+	opacity: 1;
+	width: 100%;
 }
 
 .main-content__title {
 	font: normal bold 66px/87px 'PT Serif', serif;
 	display: flex;
 	align-items: center;
-	color: #000000;
+	color: #000;
 }
 
 .main-content__subtitle {
 	font: normal normal 22px/26px 'Roboto', sans-serif;
-	font-family: 'Roboto', sans-serif;
-	color: #000000;
+	color: #000;
 }
 
 .main-content__button {
 	font: normal 500 18px/21px 'Roboto', sans-serif;
 	background: #0056EC;
 	border-radius: 4px;
-	color: #FFFFFF;
+	color: #FFF;
 
 }
