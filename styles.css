@@ -180,3 +180,31 @@ header {
 	border-radius: 50%;
 	display: inline-block;
 }
+
+.movingLogo {
+    animation-name: movingLogo;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out; 
+    visibility: visible !important;
+    transition: opacity .5s
+ }
+ 
+@keyframes movingLogo {
+    0% {
+        transform: scale(0);
+        opacity: .0;       
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: .5; 
+    }
+    80% {
+        transform: scale( .9);
+        opacity: .7; 
+    }   
+    100% {
+        transform: scale(1);
+        opacity: 1; 
+    }       
+}
+
