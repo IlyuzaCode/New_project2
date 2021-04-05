@@ -134,7 +134,7 @@ header {
 	font: normal bold 66px/87px 'PT Serif', serif;
 	align-items: center;
 	color: #000;
-	padding-top: 70px;
+	padding-top: 75px;
 	margin-bottom: 0;
 	letter-spacing: 3px;
 }
@@ -152,7 +152,7 @@ header {
 }
 
 .main__button {
-	padding: 20px 32px 17px 25px;
+	padding: 17px 32px 17px 25px;
 	font: normal 500 18px/21px 'Roboto', sans-serif;
 	background: #0056EC;
 	border-radius: 4px;
