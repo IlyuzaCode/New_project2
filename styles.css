@@ -47,17 +47,6 @@ header {
 	background: #C8DBFB;
 }
 
-.menu-mobile {
-		display: none;
-	}
-
-#checkbox {
-		display: none;
-	}
-
-.menu-burger {
-		display: none;
-}
 
 .menu {
 	font: normal 500 18px/21px 'Roboto', sans-serif;
@@ -135,6 +124,22 @@ header {
 .menu__item1:hover:after, .menu__item2:hover:after, .menu__item3:hover:after, .menu__item4:hover:after, .menu__item5:hover:after, .menu__item_active:after {
 	opacity: 1;
 	width: 100%;
+}
+
+.menu-mobile {
+		display: none;
+	}
+
+#checkbox {
+		display: none;
+	}
+
+.menu-burger {
+		display: none;
+}
+
+label {
+	display: none;
 }
 
 .main {
@@ -230,7 +235,7 @@ header {
 	}
 	
 	header {
-		padding: 0;
+		padding-bottom: 34px;
 		margin: 0;
 	}
 
@@ -246,6 +251,10 @@ header {
 		display: none;
 	}
 
+	label {
+	display: none;
+	}
+
 	.logo {
 		font: bold 24px/32px 'PT serif', sans-serif;
 		letter-spacing: 1px;
@@ -253,18 +262,33 @@ header {
 	
 	.menu {
 		font: normal 500 14px/16px 'Roboto', sans-serif;
+		margin-right: 12px;
+	}
+
+	.main {
+		background-size: 56%;
+		padding: 0 54% 68px 9px;
 	}
 
 	.main__title {
 	font: normal bold 50px/66px 'PT Serif', serif;
+	padding-top: 25px;
+	letter-spacing: 1.5px;
 	}
 
 	.main__subtitle {
 	font: normal 500 18px/21px 'Roboto', sans-serif;
+	padding-right: 10%;
 	}
 
 	.main__button {
 	font: normal 500 14px/16px 'Roboto', sans-serif;
+	padding: 15px 28px 14px 13px;
+    margin-top: 2px;
+	}
+
+	.points {
+		margin-top: 77px;
 	}
 
 }
@@ -278,12 +302,11 @@ header {
 @media (min-width: 769px) and (max-width: 1024px) {
 
 	.wrapper {
-		width: 69%;
-		margin: auto;
+		width: 92%;
 	}
-	
+
 	header {
-		padding: 0;
+		padding-bottom: 34px;
 		margin: 0;
 	}
 
@@ -299,6 +322,10 @@ header {
 		display: none;
 	}
 
+	label {
+	display: none;
+	}
+
 	.logo {
 		font: bold 24px/32px 'PT serif', sans-serif;
 		letter-spacing: 1px;
@@ -308,16 +335,30 @@ header {
 		font: normal 500 14px/16px 'Roboto', sans-serif;
 	}
 
+	.main {
+		background-size: 56%;
+		padding: 0 54% 68px 9px;
+	}
+
 	.main__title {
 	font: normal bold 50px/66px 'PT Serif', serif;
+	padding-top: 25px;
+	letter-spacing: 1.5px;
 	}
 
 	.main__subtitle {
 	font: normal 500 18px/21px 'Roboto', sans-serif;
+	padding-right: 10%;
 	}
 
 	.main__button {
 	font: normal 500 14px/16px 'Roboto', sans-serif;
+	padding: 15px 28px 14px 13px;
+    margin-top: 2px;
+	}
+
+	.points {
+		margin-top: 77px;
 	}
 }
 
@@ -406,6 +447,10 @@ header {
 
 	.points {
 		display: none;
+	}
+	
+	label {
+	display: block;
 	}
 
 	#checkbox {
