@@ -207,3 +207,196 @@ header {
         opacity: 1; 
     }       
 }
+
+
+
+@media (min-width: 1024px and max-width: 1366) {
+	
+	.wrapper {
+		width: 69%;
+		margin: auto;
+}
+	
+	.menu-burger {
+		display: none;
+	}
+
+	header {
+		padding: 0;
+		margin: 0;
+	}
+
+	.logo {
+		font: bold 24px/32px 'PT serif', sans-serif;
+		letter-spacing: 1px;
+	}
+	
+	.menu {
+		font: normal 500 14px/16px 'Roboto', sans-serif;
+	}
+
+	.main__title {
+	font: normal bold 50px/66px 'PT Serif', serif;
+	}
+
+	.main__subtitle {
+	font: normal 500 18px/21px 'Roboto', sans-serif;
+	}
+
+	.main__button {
+	font: normal 500 14px/16px 'Roboto', sans-serif;
+	}
+}
+
+
+
+
+
+
+
+@media (min-width: 769px and max-width: 1024) {
+
+	.wrapper {
+		width: 69%;
+		margin: auto;
+}
+	
+	.menu-burger {
+		display: none;
+	}
+
+	header {
+		padding: 0;
+		margin: 0;
+	}
+
+	.logo {
+		font: bold 24px/32px 'PT serif', sans-serif;
+		letter-spacing: 1px;
+	}
+	
+	.menu {
+		font: normal 500 14px/16px 'Roboto', sans-serif;
+	}
+
+	.main__title {
+	font: normal bold 50px/66px 'PT Serif', serif;
+	}
+
+	.main__subtitle {
+	font: normal 500 18px/21px 'Roboto', sans-serif;
+	}
+
+	.main__button {
+	font: normal 500 14px/16px 'Roboto', sans-serif;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+	
+	.wrapper {
+		width: 87%;
+	}
+
+	header {
+	padding: 0;
+	margin: 0;
+	margin-top: 6px;
+	}
+
+	.main {
+		padding: 80% 0 0 0;
+		background-size: 85%;
+		background-position: top center;
+		text-align: center;
+		margin-top: 14px;
+	}
+
+	.menu {
+		display: none;
+		font: normal 500 18px/21px 'Roboto', sans-serif;
+		margin-right: 12px;
+	}
+
+	.menu__item1, .menu__item2, .menu__item3, .menu__item4, .menu__item5  {
+		display: none;
+		position: relative;
+		margin-right: 27px;
+		color: #000;
+	}
+	
+	.logo {
+		    padding: 0 0 68px 50px;
+	}
+
+	.logo__name {
+		display: none;
+	}
+
+	.menu-burger__item {
+		width: 25px;
+		height: 3px;
+		margin-bottom: 4px;
+		background: #0056EC;
+	}
+
+	.menu-burger__item:last-child {
+		margin-bottom: 0;
+	}
+	
+	.main__title {
+		font: normal bold 30px/40px 'PT Serif', serif;
+		text-align: center;
+		padding-top: 0;
+		margin: 0;
+		letter-spacing: 1.5px;
+    	padding-right: 0px;
+    	padding-left: 10px;		
+	}
+
+	.main__subtitle {
+		font: normal 500 16px/19px 'Roboto', sans-serif;
+		text-align: center;
+		padding-top: 29px;
+		margin-bottom: 40px;
+		padding-right: 0;
+    	max-width: 270px;
+    	margin: 0 auto;
+    	letter-spacing: 0;
+	}
+
+	.main__button {
+		font: normal 500 14px/16px 'Roboto', sans-serif;
+		text-align: center;
+		margin-top: 25px;
+		padding: 13px 26px 11px 18px;
+	}
+
+	.points {
+		display: none;
+	}
+
+	#checkbox {
+		display: none;
+	}
+
+	#checkbox:checked ~ .menu {
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#checkbox:checked ~ .menu__item1, .menu__item2, .menu__item3, .menu__item4, .menu__item5 {
+		text-align: center;
+		font: normal 500 30px/35px 'Roboto', sans-serif;
+	}
