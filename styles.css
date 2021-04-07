@@ -22,7 +22,7 @@ header {
 #menu__toggle {
   display: none;
 }
-
+  
 .menu-burger {
   display: none;
 }
@@ -180,7 +180,6 @@ label {
   opacity: .5;
   font-weight: bold;
 }
-
 .points {
   display: flex;
   justify-content: left;
@@ -204,7 +203,7 @@ label {
   animation-timing-function: ease-in-out; 
   visibility: visible !important;
   transition: opacity .5s
-}
+ }
  
 @keyframes movingLogo {
   0% {
