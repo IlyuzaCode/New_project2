@@ -130,7 +130,7 @@ header {
 		display: none;
 	}
 
-#checkbox {
+#menu__toggle {
 		display: none;
 	}
 
@@ -243,7 +243,7 @@ label {
 		display: none;
 	}
 
-	#checkbox {
+	#menu__toggle {
 		display: none;
 	}
 
@@ -314,7 +314,7 @@ label {
 		display: none;
 	}
 
-	#checkbox {
+	#menu__toggle {
 		display: none;
 	}
 
@@ -379,12 +379,13 @@ label {
 		display: none;
 	}
 
-	.menu-mobile__item1 {
+	.menu-mobile__item {
 		font: normal 500 30px/35px 'Roboto', sans-serif;
 		text-align: center;
-		padding-bottom: 23px;
-		padding-left: 25px;
+		padding-bottom: 25px;
+		padding-left: 0;
 	}
+
 
 	.main {
 		padding: 80% 0 0 0;
@@ -400,21 +401,6 @@ label {
 
 	.logo__name {
 		display: none;
-	}
-	
-	.menu-burger {
-		display: block;
-	}
-
-	.menu-burger__item {
-		width: 25px;
-		height: 3px;
-		margin-bottom: 4px;
-		background: #0056EC;
-	}
-
-	.menu-burger__item:last-child {
-		margin-bottom: 0;
 	}
 	
 	.main__title {
@@ -449,20 +435,53 @@ label {
 		display: none;
 	}
 	
-	label {
-	display: block;
+	
+
+
+	#menu__toggle {
+  	display: none;
 	}
 
-	#checkbox {
-		display: none;
+	.menu-mobile {
+	display: none;	
 	}
 
-	#checkbox:checked ~ .menu-mobile {
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: absolute;
+  top: 32px;
+  left: 326px;
+  width: 25px;
+  height: 17px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+	.menu__btn > span,
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #0056EC;
+	}
+	.menu__btn > span::before {
+  content: '';
+  top: -8px;
+	}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+	}
+
+#menu__toggle:checked ~ .menu-mobile {
 		position: absolute;
-		width: 100vw;
+		width: 100%;
 		top: 0;
 		left: 0;
-		height: 100vh;
+		height: 100%;
 		display: block;
 		background: white;
 		padding-top: 50%;
@@ -470,27 +489,29 @@ label {
 
 	}
 	
-	#checkbox:checked ~ .menu-mobile__item1, .menu-mobile__item2, .menu-mobile__item3, .menu-mobile__item4, .menu-mobile__item5 {
+	#menu__toggle:checked ~ .menu-mobile__item {
 		text-align: center;
 		font: normal 500 30px/35px 'Roboto', sans-serif;
 		padding-bottom: 24px;
 		padding-left: 24px;
 	}
-	
-	#checkbox:checked ~ .menu-burger__item {
-		transform: rotate(45deg);
-	}
 
-	#checkbox:checked ~ .menu-burger__item:: before {
-		 top: 0;
-  		 transform: rotate(0);
-	}
 
-	#checkbox:checked ~ .menu-burger__item:: after {
-		top: 0;
+	#menu__toggle:checked ~ .menu__btn > span {
+  		transform: rotate(45deg);
+	}
+	#menu__toggle:checked ~ .menu__btn > span::before {
+  		top: 0;
+  		transform: rotate(0);
+	}
+	#menu__toggle:checked ~ .menu__btn > span::after {
+  		top: 0;
   		transform: rotate(90deg);
 	}
-	
+	#menu__toggle:checked ~ .menu-mobile {
+  		display: block;
+  		left: 0;
+	}
 }
 
 
